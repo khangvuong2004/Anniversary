@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Kỷ Niệm 6 Tháng</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    /* Popup thư tình */
+    #love-popup {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0, 0, 0, 0.6);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 2000;
+    }
+    #love-popup .popup-content {
+      background: #fff0f5;
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 0 20px rgba(255,182,193,0.4);
+      max-width: 600px;
+      text-align: center;
+      font-size: 1.2em;
+    }
+    #close-popup {
+      margin-top: 20px;
+      padding: 10px 20px;
+      border: none;
+      background: #ff69b4;
+      color: white;
+      border-radius: 20px;
+      cursor: pointer;
+      font-size: 1em;
+    }
+
+    /* Gallery */
+    .gallery {
+      display: flex;
+      overflow-x: auto;
+      gap: 20px;
+      padding: 20px 0;
+      scroll-snap-type: x mandatory;
+    }
+    .gallery img {
+      height: 200px;
+      border-radius: 15px;
+      object-fit: cover;
+      scroll-snap-align: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+    .section h2 {
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+
+<body>
+
+
+  <!-- Popup thư tình -->
+  <div id="love-popup">
+    <div class="popup-content">
+      <h2>💌 Gửi em...</h2>
+      <p>Ngay từ khoảnh khắc đầu tiên gặp em , anh đã biết phải cua em càng sớm càng tốt hihi. 6 tháng qua, em làm thế giới của anh rực rỡ hơn, màu sắc hơn và ý nghĩa hơn. Anh yêu em nhiều lắm! bà xã của anhhh :3</p>
+      <button id="close-popup">Đóng lại 💖</button>
+    </div>
+  </div>
+
+  <!-- Tim rơi -->
+  <div id="heart-container"></div>
+
+  <!-- Nhạc nền -->
+  <iframe width="0" height="0"
+  src="https://www.youtube.com/watch?v=jPjQJYKhhk4&list=RDjPjQJYKhhk4&start_radio=1"
+  frameborder="0"
+  allow="autoplay"
+  allowfullscreen>
+</iframe>
+
+
+
+
+  <!-- Hero -->
+  <div class="hero fade-in">
+    <div class="hero-photos">
+      <img src="image/tui.jpg" alt="Ảnh bạn" class="avatar">
+      <div class="hero-text">
+        <h1>6 tháng – Một hành trình yêu thương 💗</h1>
+        <p>Gửi đến em – món quà ngọt ngào mà anh may mắn có được trong đời.</p>
+      </div>
+      <img src="image/em.jpg" alt="Ảnh em" class="avatar">
+    </div>
+  </div>
+
+  <!-- Timeline dạng dòng thời gian -->
+  <section class="section fade-in">
+    <h2 style="text-align: center;">📅 Hành trình của đôi ta</h2>
+
+    <div class="timeline-wrapper">
+  <div class="timeline-item left fade-in">
+    <div class="content">
+      <img src="image/first date.jpg" alt="Hình minh họa 1" class="timeline-img">
+      <h3>06/12/2024</h3>
+      <p>First Date của chúng ta 💗</p>
+    </div>
+  </div>
+  <div class="timeline-item right fade-in">
+    <div class="content">
+      <img src="image/dalat.jpg" alt="Hình minh họa 2" class="timeline-img">
+      <h3>16/12/2025</h3>
+      <p>Đà Lạt cùng em 💗 </p>
+    </div>
+  </div>
+  <div class="timeline-item left fade-in">
+    <div class="content">
+      <img src="image/new year.jpg" alt="Hình minh họa 3" class="timeline-img">
+      <h3>01/01/2025</h3>
+      <p>Đón năm mới 2025 cùng với em 💗 </p>
+    </div>
+  </div>
+  <div class="timeline-item right fade-in">
+    <div class="content">
+      <img src="image/ao dai.jpg" alt="Hình minh họa 4" class="timeline-img">
+      <h3>20/01/2025</h3>
+      <p>Chụp hình áo dài với em 💗 </p>
+    </div>
+  </div>
+  <div class="timeline-item left fade-in">
+    <div class="content">
+      <img src="image/valentine.jpg" alt="Hình minh họa 5" class="timeline-img">
+      <h3>14/02/2025</h3>
+      <p>Valentine cùng với em 💗 </p>
+    </div>
+  </div>
+  <div class="timeline-item right fade-in">
+    <div class="content">
+      <img src="image/anni 1th.jpg" alt="Hình minh họa 6" class="timeline-img">
+      <h3>16/02/2025</h3>
+      <p>Anniversary 1 tháng với em 💗 </p>
+    </div>
+  </div>
+  <div class="timeline-item left fade-in">
+    <div class="content">
+      <img src="image/anni 2th.jpg" alt="Hình minh họa 7" class="timeline-img">
+      <h3>16/03/2025</h3>
+      <p> Anniversary 2 tháng với em 💗</p>
+    </div>
+  </div>
+  <div class="timeline-item right fade-in">
+    <div class="content">
+      <img src="image/vt.jpg" alt="Hình minh họa 8" class="timeline-img">
+      <h3>19/03/2025</h3>
+      <p>Vũng Tàu với em 💗</p>
+    </div>
+  </div>
+  <div class="timeline-item left fade-in">
+    <div class="content">
+      <img src="image/anni 3th.jpg" alt="Hình minh họa 9" class="timeline-img">
+      <h3>16/04/2025</h3>
+      <p>Anniversary 3 tháng với em 💗</p>
+    </div>
+  </div>
+  <div class="timeline-item right fade-in">
+    <div class="content">
+      <img src="image/30-4.jpg" alt="Hình minh họa 10" class="timeline-img">
+      <h3>30/04/2025</h3>
+      <p>Hưởng ứng 30/4 cùng với em 💗 </p>
+    </div>
+  </div>
+  <div class="timeline-item left fade-in">
+    <div class="content">
+      <img src="image/anni 4th.jpg" alt="Hình minh họa 11" class="timeline-img">
+      <h3>16/05/2025</h3>
+      <p>Anniversary 4 tháng với em 💗</p>
+    </div>
+  </div>
+  <div class="timeline-item right fade-in">
+    <div class="content">
+      <img src="image/anni 5th.jpg" alt="Hình minh họa 12" class="timeline-img">
+      <h3>16/06/2025</h3>
+      <p>Anniversary 5 tháng với em 💗</p>
+    </div>
+  </div>
+</div>
+<style>
+  .timeline-img {
+    width: 100%;
+    max-height: 250px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-bottom: 10px;
+  }
+</style>
+
+  </section>
+
+  <!-- Gallery ảnh -->
+  <section class="section fade-in">
+  <h2>📸 Những khoảnh khắc của chúng ta</h2>
+  <div class="gallery">
+    <img src="image/kk1.jpg" alt="Khoảnh khắc 1" onclick="openPopup(this.src)">
+    <img src="image/kk2.jpg" alt="Khoảnh khắc 2" onclick="openPopup(this.src)">
+    <img src="image/kk3.jpg" alt="Khoảnh khắc 2" onclick="openPopup(this.src)">
+    <img src="image/kk4.jpg" alt="Khoảnh khắc 2" onclick="openPopup(this.src)">
+    <img src="image/kk5.jpg" alt="Khoảnh khắc 2" onclick="openPopup(this.src)">
+    <img src="image/kk6.jpg" alt="Khoảnh khắc 2" onclick="openPopup(this.src)">
+    <img src="image/kk7.jpg" alt="Khoảnh khắc 2" onclick="openPopup(this.src)">
+    <img src="image/kk8.jpg" alt="Khoảnh khắc 2" onclick="openPopup(this.src)">
+    <img src="image/kk9.jpg" alt="Khoảnh khắc 2" onclick="openPopup(this.src)">
+    <img src="image/kk10.jpg" alt="Khoảnh khắc 2" onclick="openPopup(this.src)">
+    <img src="image/kk11.jpg" alt="Khoảnh khắc 2" onclick="openPopup(this.src)">
+    <img src="image/kk12.jpg" alt="Khoảnh khắc 2" onclick="openPopup(this.src)">
+    <img src="image/kk13.jpg" alt="Khoảnh khắc 2" onclick="openPopup(this.src)">
+    <img src="image/kk14.jpg" alt="Khoảnh khắc 2" onclick="openPopup(this.src)">
+    <img src="image/kk15.jpg" alt="Khoảnh khắc 2" onclick="openPopup(this.src)">
+    <img src="image/kk16.jpg" alt="Khoảnh khắc 2" onclick="openPopup(this.src)">
+    <img src="image/kk17.jpg" alt="Khoảnh khắc 2" onclick="openPopup(this.src)">
+    <img src="image/kk18.jpg" alt="Khoảnh khắc 2" onclick="openPopup(this.src)">
+    <img src="image/kk19.jpg" alt="Khoảnh khắc 2" onclick="openPopup(this.src)">
+    <img src="image/kk20.jpg" alt="Khoảnh khắc 2" onclick="openPopup(this.src)">
+    <img src="image/kk21.jpg" alt="Khoảnh khắc 2" onclick="openPopup(this.src)">
+    <img src="image/kk22 (1).jpg" alt="Khoảnh khắc 2" onclick="openPopup(this.src)">
+    <img src="image/kk23.jpg" alt="Khoảnh khắc 2" onclick="openPopup(this.src)">
+    <img src="image/kk24.jpg" alt="Khoảnh khắc 24" onclick="openPopup(this.src)">
+    <img src="image/kk25.jpg" alt="Khoảnh khắc 24" onclick="openPopup(this.src)">
+  </div>
+</section>
+
+
+
+
+  <!-- Lý do yêu em -->
+  <section class="things-i-love">
+  <h2>Những điều anh yêu ở em 💕</h2>
+  <div class="love-slider">
+    <div class="card">Nụ cười rạng rỡ của em 😊</div>
+    <div class="card">Thấu hiểu , biết lắng nghe </div>
+    <div class="card">Luôn mang đến cho anh sự tích cực  💌</div>
+    <div class="card">Hài hước, đáng yêu và nhây dữ lắm 🐥</div>
+    <div class="card">Cách em lắng nghe và thấu hiểu 🧠</div>
+    <div class="card">Sự kiên nhẫn cho những thay đổi dần của anh 🫶</div>
+    <div class="card">Sự bao dung , tha thứ cho anh mỗi lần anh làm sai ✋💖</div>
+  </div>
+</section>
+
+  <!-- Thư gửi em -->
+  <section class="section fade-in message">
+  <h2 onclick="toggleLetter()" class="letter-toggle">📩 Gửi em lời chân thành </h2>
+  <div id="letter-content" class="letter-content hidden">
+    <p>
+      Em à, <br><br>
+      6 tháng qua là quãng thời gian anh trân trọng vô cùng. Cảm ơn em đã luôn dịu dàng, luôn bên anh những lúc anh vui – và cả những lúc anh yếu lòng nhất.<br><br>
+      Anh không hứa thật nhiều, chỉ mong anh với em sẽ cùng nhau đồng hành trên chặng đường phía trước . Cùng nhau thấu hiểu , tha thứ và iu thương nhau nhiều hơn ạ ❤️<br><br>
+      Yêu em!<br>
+      – Ông xã của em 💖
+    </p>
+  </div>
+</section>
+
+
+  <!-- Footer -->
+  <footer>
+    <p>Trang web này được anh làm riêng cho em. Cảm ơn em vì đã bước vào đời anh 💘</p>
+  </footer>
+
+  <!-- Tim rơi -->
+  <script>
+    const container = document.getElementById('heart-container');
+    setInterval(() => {
+      const heart = document.createElement('div');
+      heart.classList.add('heart');
+      heart.style.left = Math.random() * 100 + 'vw';
+      heart.style.animationDuration = 2 + Math.random() * 3 + 's';
+      container.appendChild(heart);
+      setTimeout(() => heart.remove(), 5000);
+    }, 300);
+  </script>
+
+  <!-- Nhạc toggle -->
+  <script>
+    const music = document.getElementById('bg-music');
+    const toggle = document.getElementById('music-toggle');
+    toggle.addEventListener('click', () => {
+      if (music.paused) {
+        music.play();
+        toggle.textContent = '⏸ Dừng nhạc';
+      } else {
+        music.pause();
+        toggle.textContent = '▶ Phát nhạc';
+      }
+    });
+  </script>
+
+  <!-- Popup thư tình -->
+  <script>
+    const popup = document.getElementById('love-popup');
+    const closeBtn = document.getElementById('close-popup');
+    closeBtn.addEventListener('click', () => {
+      popup.style.display = 'none';
+    });
+  </script>
+<script>
+  function toggleLetter() {
+    const letter = document.getElementById('letter-content');
+    letter.classList.toggle('show');
+  }
+</script>
+
+</body>
+</html>
